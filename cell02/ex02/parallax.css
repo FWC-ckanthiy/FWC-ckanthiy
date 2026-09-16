@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* รูปภาพแต่ละส่วน */
+.image-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* รูปภาพที่ 1 */
+.image-one {
+    background-image: url("https://i.pinimg.com/736x/25/b6/69/25b66976905a316dc09e6bafef621d56.jpg");
+}
+
+/* ส่วนสีดำตรงกลาง */
+.black-section {
+    height: 100vh;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* ข้อความ */
+.text {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* รูปภาพที่ 2 */
+.image-two {
+    background-image: url("https://i.pinimg.com/236x/4c/e7/4d/4ce74d8f5c46601ca76f630a71efe742.jpg");
+}
