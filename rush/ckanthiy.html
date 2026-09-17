@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - ckanthiy</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding-top: 80px;
+            background: #eeb2cb;
+            color: #ffffff;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            background: #fb74be;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 2px solid #ffffff;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 50px;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+
+        .menu a {
+            font-size: 20px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            scroll-margin-top: 70px;
+            min-height: 100vh;
+            padding: 30px;
+        }
+
+        #about {
+            text-align: center;
+        }
+
+        #about .photo {
+            display: block;
+            width: 350px;
+            height: 400px;
+            object-fit: cover;
+            margin: 0 auto 40px;
+        }
+        #about h2 {
+            font-size: 50px;
+            margin-bottom: 35px;
+        }
+
+        #about p {
+            font-size: 28px;
+            line-height: 1.5;
+        }
+
+        #skills {
+            padding: 70px 10%;
+            text-align: center;
+        }
+        .skill-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: 30px auto;
+        }
+
+        #skills .photo {
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+            margin: 0;
+        }
+
+        #skills .photo1 {
+            width: 450px;
+            height: 300px;
+            object-fit: contain;
+            margin: 0;
+        }
+        #skills h2 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+        .skill-decoration {
+            font-size: 55px;
+            margin-top: 20px;
+        }
+        #projects {
+            text-align: center;
+        }
+
+        #projects h2 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        #projects p {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        #projects .photo {
+            width: 500px;
+            height: 300px;
+            object-fit: contain;
+            margin: 20px auto 40px;
+            display: block;
+        }
+
+        #projects .project1 {
+            margin-bottom: 100px;
+        }
+        #contact {
+            padding: 70px 10%;
+        }
+
+        #contact h2 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        #contact a {
+            display: inline-block;
+            color: #ffffff;
+            font-size: 20px;
+            margin: 20px 10px;
+        }
+        #contact img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            margin: 10px;
+        }
+
+        @media (max-width: 768px) {
+        .skill-images,
+        .project-images {
+            flex-direction: column;
+        }
+
+            #skills .photo,
+            #skills .photo1 {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+            }
+
+            #projects .photo {
+                width: 100%;
+                max-width: 500px;
+                height: auto;
+            }
+            .navbar {
+                height: auto;
+                padding: 15px;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .menu {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .menu a {
+                font-size: 16px;
+            }
+
+            #about h2,
+            #skills h2,
+            #projects h2,
+            #contact h2 {
+                font-size: 40px;
+            }
+
+            #about p,
+            #projects p {
+                font-size: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">Portfolio</a>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+
+    <section id="about">
+        <img src="images/guitar/profile.jpg" alt="Guitar" class="photo">
+        <h2>❤ About Me ❤</h2>
+        <p>Hello, my name is Chalisa Kanthiya.</p>
+
+        <p>i love to play game and cooking with my family ⸜(｡˃ ᵕ ˂ )⸝♡</p>
+
+        <h3>────ᰔᩚ────</h3>
+        <hr>
+    </section>
+
+
+    <section id="skills">
+
+        <h2>My Skills</h2>
+        <div class="skill-images">
+            <img src="images/guitar/skill1.jpg" alt="Guitar" class="photo1">
+            <img src="images/guitar/skill2.jpg" alt="Guitar" class="photo">
+        </div>
+        <h1>Play game like a pro and Cooking</h1>
+        <h3>────ᰔᩚ────</h3>
+        
+        <hr>
+    </section>
+
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <h1>1. Analysis of Krungthai Bank's Business</h1>
+
+        <p>This was my first project, and it was exhibited at the KMITL INNOVATION EXPO 2025 event.</p>
+        <img src="images/guitar/project1.jpg" alt="Guitar" class="photo">
+        <h1>2. Analysis of TAO BIN's Business</h1>
+
+        <p>This project involves analyzing Business model canvas, as well as thinking about Proble formulation and Solving problem.</p>
+        <img src="images/guitar/project2.jpg" alt="Guitar" class="photo">
+
+        <hr>
+    </section>
+
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <a href="https://github.com/FWC-ckanthiy/FWC-ckanthiy" target="_blank">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png"
+                 alt="GitHub">
+        </a>
+
+        <a href="https://www.instagram.com/0_chalisx?stkn=MWpzcnNjczIwMDdlbw%3D%3D&utm_source=qr" target="_blank">
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/3840px-Instagram_logo_2016.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
+                 alt="Instagram">
+        </a>
+
+    </section>
+
+</body>
+
+</html>
